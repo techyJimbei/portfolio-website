@@ -6,7 +6,7 @@ import NameBackdrop from './NameBackdrop';
 import Bubbles from './Bubbles'; // ✅ Add correctly
 
 function Dino({ mouse }) {
-  const { scene } = useGLTF('/portfolio_dino_final.glb');
+  const { scene } = useGLTF(`/portfolio_dino_final.glb`);
   const dinoRef = useRef();
   const headRef = useRef();
 
@@ -88,7 +88,7 @@ const DinoScene = () => {
     <Dino mouse={mouse} />
     <Environment
       background={false}
-      files="citrus_orchard_road_puresky_4k.hdr"
+      files={`/citrus_orchard_road_puresky_4k.hdr`}
       path="/"
       ground={{ height: 5, radius: 30, scale: 100 }}
       intensity={0.4}

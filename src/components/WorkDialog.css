@@ -51,7 +51,7 @@
   left: 50%;
   transform: translateX(-50%);
   background: rgba(255, 255, 255, 0.3);
-  padding: 3px 14px;
+  padding: 8px 14px;
   border-radius: 15px;
   font-weight: 600;
   font-size: 1rem;
@@ -142,10 +142,4 @@
   padding-right: 8px;
 }
 
-/* Optional font */
-@font-face {
-  font-family: 'Georgio';
-  src: url('/public/font/GeorgioTypefaceRegular-R92eA.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
+

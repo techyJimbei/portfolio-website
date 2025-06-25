@@ -42,7 +42,7 @@ function App() {
         <AboutDialog
           isOpen={true}
           onClose={handleCloseDialog}
-          modelPath="/about_lamb.glb" // ✅ public path (no /public prefix)
+          modelPath={`/about_lamb.glb`} 
           paragraph="I'm a creative full-stack developer with a passion for blending beautiful UI with practical backend logic. I enjoy turning abstract ideas into intuitive, interactive experiences. Currently exploring 3D web tech using Three.js and Blender."
         />
       )}
@@ -51,7 +51,7 @@ function App() {
   <ContactDialog
     isOpen={true}
     onClose={handleCloseDialog}
-    modelPath="/contact_duck.glb" 
+    modelPath={`/contact_duck.glb`} 
   />
 )}
     </div>

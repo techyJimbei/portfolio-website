@@ -14,12 +14,7 @@
   text-align: center;
   text-shadow: 0 2px 8px rgba(255, 255, 255, 0.3); /* Added subtle shadow for contrast */
 }
-@font-face {
-  font-family: 'LEMONMILK-Bold';
-  src: url('/public/font/LEMONMILK-Bold.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
+
 
 @media (max-width: 600px) {
   .name-backdrop {

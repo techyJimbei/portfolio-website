@@ -3,7 +3,7 @@ import './DinoScene.css';
 
 const Bubbles = () => {
   const playSound = () => {
-    const bubbleSound = new Audio('/bubble-pop.mp3');
+    const bubbleSound = new Audio(`/bubble-pop.mp3`);
     bubbleSound.volume = 0.4;
     bubbleSound.play().catch((err) => console.warn("Sound play failed:", err));
   };

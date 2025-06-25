@@ -27,18 +27,19 @@ const BackgroundMusic = () => {
 };
 
 
-  return (
-    <div className="bg-music-container">
-      <audio ref={audioRef} src="/bg-music.mp3" />
-      <button onClick={toggleMute} className="bg-music-btn">
-        <img
-          src={isMuted ? '/mute.svg' : '/audio-on.svg'}
-          alt={isMuted ? 'Muted' : 'Unmuted'}
-          className="bg-music-icon"
-        />
-      </button>
-    </div>
-  );
+return (
+  <div className="bg-music-container">
+    <audio ref={audioRef} src={`/bg-music.mp3`} />
+    <button onClick={toggleMute} className="bg-music-btn">
+      <img
+        src={isMuted ? `/mute.svg` : `/audio-on.svg`}
+        alt={isMuted ? 'Muted' : 'Unmuted'}
+        className="bg-music-icon"
+      />
+    </button>
+  </div>
+);
+
 };
 
 export default BackgroundMusic;
