@@ -17,7 +17,7 @@ const ClickSound = () => {
     };
   }, []);
 
-  return <audio ref={audioRef} src={`/select.mp3`} preload="auto" />;
+  return <audio ref={audioRef} src={`${process.env.PUBLIC_URL}/select.mp3`} preload="auto" />;
 };
 
 export default ClickSound;

@@ -4,7 +4,7 @@ import { useGLTF, OrbitControls } from '@react-three/drei';
 import './ResumeDialog.css';
 
 const DinoModel = () => {
-  const { scene } = useGLTF(`/resume_dino.glb`);
+  const { scene } = useGLTF(`${process.env.PUBLIC_URL}/resume_dino.glb`);
   const dinoRef = useRef();
 
   return (
@@ -39,7 +39,7 @@ const ResumeDialog = ({ isOpen, onClose }) => {
         {/* PDF Viewer */}
         <div className="resume-pdf-container">
           <embed
-            src={`/Resume.pdf`}
+            src={`${process.env.PUBLIC_URL}/Resume.pdf`}
             type="application/pdf"
             width="100%"
             height="100%"

@@ -29,10 +29,10 @@ const BackgroundMusic = () => {
 
 return (
   <div className="bg-music-container">
-    <audio ref={audioRef} src={`/bg-music.mp3`} />
+    <audio ref={audioRef} src={`${process.env.PUBLIC_URL}/bg-music.mp3`} />
     <button onClick={toggleMute} className="bg-music-btn">
       <img
-        src={isMuted ? `/mute.svg` : `/audio-on.svg`}
+        src={isMuted ? `${process.env.PUBLIC_URL}/mute.svg` : `${process.env.PUBLIC_URL}/audio-on.svg`}
         alt={isMuted ? 'Muted' : 'Unmuted'}
         className="bg-music-icon"
       />

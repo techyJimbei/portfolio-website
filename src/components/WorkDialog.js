@@ -7,13 +7,13 @@ const projects = [
   {
     id: 1,
     title: 'Momentum: Social Productivity App',
-    model: `/proj1_dino.glb`,
+    model: `${process.env.PUBLIC_URL}/proj1_dino.glb`,
     images: [
-      `/projimg1.jpg`,
-      `/projimg2.jpg`,
-      `/projimg3.jpg`,
-      `/projimg4.jpg`,
-      `/projimg5.jpg`,
+      `${process.env.PUBLIC_URL}/projimg1.jpg`,
+      `${process.env.PUBLIC_URL}/projimg2.jpg`,
+      `${process.env.PUBLIC_URL}/projimg3.jpg`,
+      `${process.env.PUBLIC_URL}/projimg4.jpg`,
+      `${process.env.PUBLIC_URL}/projimg5.jpg`,
     ],
     description:
       'Momentum is a productivity-driven Android app that combines social networking with task tracking to build consistency, accountability, and motivation through community. It’s designed to encourage users to complete daily goals and share their achievements in a gamified ecosystem.',
@@ -30,7 +30,7 @@ const projects = [
   {
     id: 2,
     title: 'Question Paper Prediction App',
-    model: `/proj2_dino.glb`,
+    model: `${process.env.PUBLIC_URL}/proj2_dino.glb`,
     description:
       'An interactive paper prediction platform where users bet login-earned coins on questions like "Will AI be asked in UPSC 2026?" Communities raise predictions, and users gain or lose coins based on actual outcomes. Top predictors are rewarded daily. The app features trending questions, a leaderboard, and coin-based participation.',
     techStack: [
@@ -52,7 +52,7 @@ const projects = [
   {
     id: 3,
     title: 'Blockchain Donation Website',
-    model: `/proj3_dino.glb`,
+    model: `${process.env.PUBLIC_URL}/proj3_dino.glb`,
     description:
       'A blockchain-powered donation platform on Ethereum, ensuring secure and transparent charitable giving. Users donate through MetaMask wallets to verified causes. Smart contracts handle fund distribution, with full donation tracking available on-chain for accountability.',
     techStack: ['Solidity', 'Ethereum', 'MetaMask', 'JavaScript', 'HTML/CSS'],
