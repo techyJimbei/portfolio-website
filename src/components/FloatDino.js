@@ -33,7 +33,7 @@ const FloatingDino = ({ modelPath, title, onClick }) => {
 
   return (
     <div className="floating-dino-wrapper" onClick={handleClick}>
-      <audio ref={audioRef} src="/sounds/select.mp3" preload="auto" />
+      <audio ref={audioRef} src="/select.mp3" preload="auto" />
 
       <div className="dino-canvas-container">
         <Canvas camera={{ position: [0, 0.5, 4.5] }}>

@@ -9,11 +9,11 @@ const projects = [
     title: 'Momentum: Social Productivity App',
     model: '/proj1_dino.glb',
     images: [
-      '/images/projimg1.jpg',
-      '/images/projimg2.jpg',
-      '/images/projimg3.jpg',
-      '/images/projimg4.jpg',
-      '/images/projimg5.jpg',
+      '/projimg1.jpg',
+      '/projimg2.jpg',
+      '/projimg3.jpg',
+      '/projimg4.jpg',
+      '/projimg5.jpg',
     ],
     description:
       'Momentum is a productivity-driven Android app that combines social networking with task tracking to build consistency, accountability, and motivation through community. It’s designed to encourage users to complete daily goals and share their achievements in a gamified ecosystem.',
