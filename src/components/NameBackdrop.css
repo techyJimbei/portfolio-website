@@ -1,0 +1,29 @@
+.name-backdrop {
+  position: absolute;
+  top: 12vh; /* Moved much higher to avoid dino overlap */
+  left: 52%;
+  transform: translateX(-50%);
+  font-size: 6vw; /* Reduced size to fit better */
+  font-weight: 950;
+  color: rgba(255, 255, 255, 0.804); /* Slightly reduced opacity */
+  letter-spacing: 0.2em;
+  z-index: 1; /* Lower z-index to stay behind dino */
+  user-select: none;
+  pointer-events: none;
+  white-space: nowrap;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(255, 255, 255, 0.3); /* Added subtle shadow for contrast */
+}
+@font-face {
+  font-family: 'LEMONMILK-Bold';
+  src: url('/public/font/LEMONMILK-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media (max-width: 600px) {
+  .name-backdrop {
+    font-size: 8vw; /* Smaller on mobile */
+    top: 3vh; /* Higher position on mobile */
+  }
+}

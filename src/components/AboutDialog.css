@@ -1,0 +1,59 @@
+.about-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 120;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .about-dialog {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    width: 90vw;
+    height: 80vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Make the text area scrollable */
+  .about-text {
+    width: 60%;
+    padding: 2rem;
+    overflow-y: auto;
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #eee;
+  }
+  
+  .about-text::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .about-text::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 10px;
+  }
+  
+  /* Visually pop out the model */
+  .about-model {
+    width: 40%;
+    height: 100%;
+    position: relative;
+    overflow: visible;
+    margin-left: -40px; /* makes it spill out slightly */
+    z-index: 10;
+  }
+  
+  .about-model canvas {
+    width: 110%;
+    height: 110%;
+    transform: translateX(-20px); /* moves canvas slightly into the text box space */
+  }
+  

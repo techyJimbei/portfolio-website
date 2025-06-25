@@ -1,0 +1,62 @@
+.description-section {
+  width: 100vw;
+  margin: 0 auto;
+  padding: 4vh 5vw;
+  background: rgba(255, 255, 255, 0.07); /* solid fallback */
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.07) 0%,
+    rgba(161, 196, 253, 0.08) 30%,
+    rgba(167, 195, 207, 0.1) 100%
+  );
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* subtle inner glow */
+  border-top: 1px solid rgba(255, 255, 255, 0.2); /* soft top border */
+  text-align: left;
+  z-index: 1;
+  position: relative;
+  margin-top: 0vh;
+}
+
+
+.description-section h2 {
+  color: #1976d2;
+  font-size: 2.0rem; /* Slightly reduced */
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: left; /* Align heading to left */
+}
+
+
+.description-section p {
+  color: #0a2540;
+  font-size: 1.05rem; /* Slightly smaller font size */
+  max-width: 100%; /* Full width */
+  margin: 0;
+  line-height: 1.7;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.4);
+}
+@font-face {
+  font-family: 'Planets';
+  src: url('/public/font/Planets.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media (max-width: 600px) {
+  .description-section h2 {
+    font-size: 1.2rem;
+  }
+  .description-section p {
+    font-size: 0.9rem;
+    padding: 0;
+  }
+
+  .description-section {
+    padding: 3vh 4vw;
+    margin-top: 1vh;
+  }
+}

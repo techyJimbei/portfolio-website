@@ -1,0 +1,59 @@
+.topbar-appbar {
+  background: rgba(255, 255, 255, 0.1); /* Transparent */
+  backdrop-filter: blur(12px); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.topbar-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  min-height: 64px;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.topbar-btn {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  margin: 0 0.25rem;
+  transition: background 0.2s ease, color 0.2s ease;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+}
+
+.topbar-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: #1976d2;
+}
+
+.topbar-btn.selected {
+  background: rgba(255, 255, 255, 0.4);
+  color: #1976d2;
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.3);
+}
+
+
+@media (max-width: 600px) {
+  .topbar-toolbar {
+    gap: 0.5rem;
+    padding: 0 1rem;
+  }
+
+  .topbar-btn {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.7rem;
+  }
+}
